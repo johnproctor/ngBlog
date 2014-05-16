@@ -65,12 +65,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Header\headerController.js" />
-    <Content Include="Content\Header\headerTemplate.htm" />
-    <Content Include="Content\Intro\introController.js" />
-    <Content Include="Content\Intro\introTemplate.htm" />
+    <Content Include="Content\Blog\blogController.js" />
+    <Content Include="Content\Blog\blogTemplate.html" />
+    <Content Include="Content\Contact\contactController.js" />
+    <Content Include="Content\Contact\contactTemplate.html" />
+    <Content Include="Content\Page\pageController.js" />
+    <Content Include="Content\Page\introTemplate.htm" />
     <Content Include="Content\ng-Blog.js" />
-    <Content Include="index.htm" />
+    <Content Include="index.html" />
+    <Content Include="Scripts\contentful.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

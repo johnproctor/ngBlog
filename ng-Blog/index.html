@@ -3,9 +3,9 @@
 <head>
     <title></title>
 </head>
-<body ng-app="ngBlog">
-    <header ng-controller="headerController">
-        <h1>{{model.items[0].fields.title}}</h1>
+<body ng-app="ngBlog" ng-controller="pageController">
+    <header>
+        <h1>{{content.header}}</h1>
         <nav>
             <ul>
                 <li></li>
@@ -14,13 +14,21 @@
     </header>
     
     <article>
-        <section ng-controller="introController">{{model}}</section>    
+        <section>
+            {{content.intro}}
+        </section>
+        
         <section ng-view></section>
     </article>
     
-    <script src="https://raw.githubusercontent.com/contentful/contentful.js/master/dist/contentful.min.js"></script>
+    <script src="Scripts/contentful.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/pagedown/1.0/Markdown.Converter.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/pagedown/1.0/Markdown.Editor.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/pagedown/1.0/Markdown.Sanitizer.min.js"></script>
 
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular-resource.min.js"></script>
@@ -28,10 +36,10 @@
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular-cookies.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular-sanitize.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular-animate.min.js"></script>
-    
-    <script src="Content/ng-Blog.js"></script>
-    <script src="Content/Header/headerController.js"></script>
-    <script src="Content/Intro/introController.js"></script>
 
+    <script src="Content/ng-Blog.js"></script>
+    <script src="Content/Page/pageController.js"></script>
+    <script src="Content/Blog/blogController.js"></script>
+    <script src="Content/Contact/contactController.js"></script>
 </body>
 </html>

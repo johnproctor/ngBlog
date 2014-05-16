@@ -4,3 +4,9 @@ c:\Projects\ng-Blog\ng-Blog\bin\ng-Blog.pdb
 c:\Projects\ng-Blog\ng-Blog\obj\Debug\ng-Blog.csprojResolveAssemblyReference.cache
 c:\Projects\ng-Blog\ng-Blog\obj\Debug\ng-Blog.dll
 c:\Projects\ng-Blog\ng-Blog\obj\Debug\ng-Blog.pdb
+C:\Projects\ngBlog\ng-Blog\bin\ng-Blog.dll.config
+C:\Projects\ngBlog\ng-Blog\bin\ng-Blog.dll
+C:\Projects\ngBlog\ng-Blog\bin\ng-Blog.pdb
+C:\Projects\ngBlog\ng-Blog\obj\Debug\ng-Blog.csprojResolveAssemblyReference.cache
+C:\Projects\ngBlog\ng-Blog\obj\Debug\ng-Blog.dll
+C:\Projects\ngBlog\ng-Blog\obj\Debug\ng-Blog.pdb

@@ -1,24 +1,22 @@
-﻿var ngBlog = angular.module('ngBlog', ['ngResource', 'ngRoute']);
+﻿var ngBlog = angular.module('ngBlog', ['ngResource', 'ngRoute', 'ngSanitize']);
 
-ngBlog.constant('APPURL', 'fullUrlAndToken');
-ngBlog.constant('ACCESSTOKEN', 'token');
-ngBlog.constant('SPACE', 'space');
+ngBlog.constant('ACCESSTOKEN', 'yourToken');
+ngBlog.constant('SPACE', 'yourSpace');
 
-//Wrapper for contentful api so we can inject it in ng
+//Setup Page and DocType IDs as constants to remove magic strings
+ngBlog.constant('HOMEPAGEID', 'pageId');
+ngBlog.constant('BLOGDOCTYPEID', 'docTypeId');
+
+//Create wrappers for 3rd party libs to inject via angular
 ngBlog.factory('contentfulService', function() {
     return contentful;
 });
-
-//Can do it via a resource and make the rest calls
-ngBlog.factory('Blog', ['$resource', 'APPURL', function ($resource, APPURL) {
-    return $resource(APPURL, {}, {
-        list : {
-            method: 'GET',
-            cache : true
-        }
-    });
-    }
-]);
+ngBlog.factory('_', function () {
+    return _;
+});
+ngBlog.factory('MarkdownConverter', function () {
+    return new Markdown.Converter();
+});
 
 //Factory that creates a new client using contentful
 ngBlog.factory('Contentful', ['contentfulService', 'ACCESSTOKEN', 'SPACE', function (contentfulService, ACCESSTOKEN, SPACE) {
@@ -28,3 +26,24 @@ ngBlog.factory('Contentful', ['contentfulService', 'ACCESSTOKEN', 'SPACE', funct
         });
     }
 ]);
+
+//Configure routing
+ngBlog.config(['$routeProvider',
+  function ($routeProvider) {
+      $routeProvider.
+        when('/', {
+            templateUrl: 'Content/Blog/blogTemplate.html',
+            controller: 'blogController'
+        }).
+        when('/Blog/:id', {
+              templateUrl: 'Content/Blog/blogTemplate.html',
+              controller: 'blogController'
+          }).
+        when('/contact', {
+            templateUrl: 'Content/Contact/contactTemplate.html',
+            controller: 'contactController'
+        }).
+        otherwise({
+            redirectTo: '/'
+        });
+  }]);
