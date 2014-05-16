@@ -2,20 +2,20 @@
     <fieldset>
         <legend>Contact:</legend>
         <div>
-            <label>Your Name:</label>
-            <input type="text" required ng-model="contact.name" />
+            <label for="name">Your Name:</label>
+            <input id="name" type="text" required ng-model="contact.name" placeholder="Your Name" />
         </div>
         <div>
-            <label>Your Email Address:</label>
-            <input type="email" required ng-model="contact.email" />
+            <label for="email">Your Email Address:</label>
+            <input id="email" type="email" required ng-model="contact.email" placeholder="youraddress@email.com"/>
         </div>
         <div>
-            <label>Telephone Number</label>
-            <input type="tel" ng-model="contact.telephone" />
+            <label for="tel">Telephone Number</label>
+            <input id="tel" type="tel" ng-model="contact.telephone" placeholder="00000 000000" />
         </div>
         <div>
-            <label>Your Enquiry:</label>
-            <textarea ng-model="contact.enquiry" />
+            <label for="enquiry">Your Enquiry:</label>
+            <textarea id="enquiry" ng-model="contact.enquiry" placeholder="Your enquiry" ></textarea>
         </div>
     </fieldset>
     <input type="submit" value="Submit" />
