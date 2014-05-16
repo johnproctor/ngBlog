@@ -1,1 +1,22 @@
-﻿<h1>Contact template</h1>
+﻿<form ng-submit="sendForm()">
+    <fieldset>
+        <legend>Contact:</legend>
+        <div>
+            <label>Your Name:</label>
+            <input type="text" required ng-model="contact.name" />
+        </div>
+        <div>
+            <label>Your Email Address:</label>
+            <input type="email" required ng-model="contact.email" />
+        </div>
+        <div>
+            <label>Telephone Number</label>
+            <input type="tel" ng-model="contact.telephone" />
+        </div>
+        <div>
+            <label>Your Enquiry:</label>
+            <textarea ng-model="contact.enquiry" />
+        </div>
+    </fieldset>
+    <input type="submit" value="Submit" />
+</form>

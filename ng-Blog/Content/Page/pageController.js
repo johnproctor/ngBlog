@@ -10,7 +10,7 @@
         var fields = data[length].fields;
         $scope.title = fields.title;
         $scope.date = fields.date;
-        $scope.post = MarkdownConverter.makeHtml(fields.post);
+        $scope.post = MarkdownConverter.makeHtml(fields.post); //Contentful returns markdown, so need to convert
         $scope.$apply();
     });
 
