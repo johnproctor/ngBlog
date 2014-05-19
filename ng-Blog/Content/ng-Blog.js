@@ -28,14 +28,13 @@ ngBlog.factory('Contentful', ['contentfulService', 'ACCESSTOKEN', 'SPACE', funct
 ]);
 
 //Configure routing
-ngBlog.config(['$routeProvider',
-  function ($routeProvider) {
+ngBlog.config(['$routeProvider',  '$locationProvider',
+  function ($routeProvider, $locationProvider) {
       $routeProvider.
         when('/', {
-            templateUrl: 'Content/Blog/blogTemplate.html',
-            controller: 'blogController'
+            controller: 'pageController'
         }).
-        when('/Blog/:id', {
+        when('/blogs', {
               templateUrl: 'Content/Blog/blogTemplate.html',
               controller: 'blogController'
           }).
@@ -46,4 +45,7 @@ ngBlog.config(['$routeProvider',
         otherwise({
             redirectTo: '/'
         });
+
+      $locationProvider.html5Mode(true);
+
   }]);

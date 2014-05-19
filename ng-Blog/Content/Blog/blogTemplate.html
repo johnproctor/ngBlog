@@ -1,6 +1,10 @@
-﻿<h2>{{title}}</h2>
+﻿<div ng-repeat="post in posts">
+    <h2>{{post.fields.title}}</h2>
 
-<time datetime="{{date}}">{{date}}</time>
+    <time datetime="{{post.fields.date}}">{{date}}</time>
 
-<div ng-bind-html="post"></div>
+    <div ng-bind-html="post.fields.post"></div>
+</div>
+
+
 

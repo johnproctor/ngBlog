@@ -57,6 +57,23 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Scripts\picturefill.js" />
+    <Content Include="Style\Config.css">
+      <DependentUpon>Config.scss</DependentUpon>
+    </Content>
+    <Content Include="Style\Footer.css">
+      <DependentUpon>Footer.scss</DependentUpon>
+    </Content>
+    <Content Include="Style\Header.css">
+      <DependentUpon>Header.scss</DependentUpon>
+    </Content>
+    <Content Include="Style\Site.css">
+      <DependentUpon>Site.scss</DependentUpon>
+    </Content>
+    <Content Include="Style\Site.scss" />
+    <Content Include="Style\Config.scss" />
+    <Content Include="Style\Header.scss" />
+    <Content Include="Style\Footer.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

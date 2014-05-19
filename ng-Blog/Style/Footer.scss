@@ -1,0 +1,17 @@
+nav ul {
+	list-style-type: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+
+	li {
+		text-align: center;
+		width: 105px;
+		border-radius: 5px;
+		background-color: $default-button-color;
+		padding: 0.5em;
+		margin: 1em auto;
+		color: $default-button-text-color;
+	}
+}

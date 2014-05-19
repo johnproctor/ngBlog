@@ -1,0 +1,37 @@
+header h1 {
+  background-color: #2f2f46;
+  color: white;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+  padding-top: 1em;
+  padding-left: 3em;
+  margin: 0;
+  height: 30px; }
+
+nav ul {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+  nav ul li {
+    text-align: center;
+    width: 105px;
+    border-radius: 5px;
+    background-color: #645a3d;
+    padding: 0.5em;
+    margin: 1em auto;
+    color: white; }
+
+body {
+  font: 1em "Muli", sans-serif;
+  box-sizing: border-box; }
+
+h1 {
+  font-size: 1em; }
+
+img {
+  width: 100%;
+  padding: 0;
+  margin: 0; }
+

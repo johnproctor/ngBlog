@@ -10,3 +10,9 @@ C:\Projects\ngBlog\ng-Blog\bin\ng-Blog.pdb
 C:\Projects\ngBlog\ng-Blog\obj\Debug\ng-Blog.csprojResolveAssemblyReference.cache
 C:\Projects\ngBlog\ng-Blog\obj\Debug\ng-Blog.dll
 C:\Projects\ngBlog\ng-Blog\obj\Debug\ng-Blog.pdb
+C:\Users\John\Dropbox\Projects\OneDrive\ngBlog\ng-Blog\bin\ng-Blog.dll.config
+C:\Users\John\Dropbox\Projects\OneDrive\ngBlog\ng-Blog\bin\ng-Blog.dll
+C:\Users\John\Dropbox\Projects\OneDrive\ngBlog\ng-Blog\bin\ng-Blog.pdb
+C:\Users\John\Dropbox\Projects\OneDrive\ngBlog\ng-Blog\obj\Debug\ng-Blog.csprojResolveAssemblyReference.cache
+C:\Users\John\Dropbox\Projects\OneDrive\ngBlog\ng-Blog\obj\Debug\ng-Blog.dll
+C:\Users\John\Dropbox\Projects\OneDrive\ngBlog\ng-Blog\obj\Debug\ng-Blog.pdb
